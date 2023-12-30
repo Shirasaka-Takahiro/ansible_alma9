@@ -4,15 +4,15 @@
   user: ansible-user
   roles:
     #- access_test
-    - common/yum_update
-    - common/firewalld
-    - common/hostname
-    - common/selinux
-    - common/swap
-    - common/timezone
-    - common/tools
-    - common/user_add
-    - httpd
+    #- common/yum_update
+    #- common/firewalld
+    #- common/hostname
+    #- common/selinux
+    #- common/swap
+    #- common/timezone
+    #- common/tools
+    #- common/user_add
+    #- httpd
     #- nginx
     - mysql
     - php
