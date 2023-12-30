@@ -1,0 +1,7 @@
+##create user
+- name: create user
+  user:
+    name: "{{ user_name }}"
+    password: "{{ user_password | password_hash('sha512') }}"
+    #groups: "{{ user_group }}"
+    generate_ssh_key: yes

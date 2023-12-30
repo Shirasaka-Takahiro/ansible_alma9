@@ -1,0 +1,21 @@
+---
+- hosts: target_hosts
+  become: true
+  user: ansible-user
+  roles:
+    #- access_test
+    - common/yum_update
+    - common/firewalld
+    - common/hostname
+    - common/selinux
+    - common/swap
+    - common/timezone
+    - common/tools
+    - common/user_add
+    - httpd
+    #- nginx
+    - mysql
+    - php
+    #- docker
+    #- zabbix_agent
+    #- zabbix_agent/zabbix_agent_mysql
