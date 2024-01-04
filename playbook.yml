@@ -15,7 +15,8 @@
     #- httpd
     #- nginx
     #- mysql
+    - mysql/mysql_log
     #- php
     #- docker
     #- zabbix_agent
-    - zabbix_agent/zabbix_agent_mysql
+    #- zabbix_agent/zabbix_agent_mysql
