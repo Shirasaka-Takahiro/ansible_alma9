@@ -91,3 +91,14 @@
 
 - name: update root user plugin
   command: mysql --user root --password="{{ root_password }}" --execute="ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '{{ root_password }}';"
+
+- name: put mysql_config_editor
+  template:
+    src: ../templates/mysql_config_editor
+    dest: /tmp
+    owner: root
+    group: root
+    mode: 0755
+
+- name: exec mysql_config_editor
+  shell: "/tmp/mysql_config_editor"
