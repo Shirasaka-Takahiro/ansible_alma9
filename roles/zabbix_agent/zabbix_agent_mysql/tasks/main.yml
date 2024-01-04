@@ -1,7 +1,7 @@
 ---
-- name: install MySQL-python
+- name: install python-PyMySQL
   yum:
-    name: MySQL-python
+    name: python-PyMySQL
     state: present
 
 - name: create zabbix-user
