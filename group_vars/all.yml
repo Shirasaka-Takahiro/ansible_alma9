@@ -33,7 +33,6 @@ php_modules:
   - "php-gd"
   - "php-process"
   - "php-intl"
-  - "php-mysql"
   - "php-fpm"
   - "php-zip"
   - "php-bcmath"
