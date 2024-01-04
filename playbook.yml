@@ -13,9 +13,9 @@
     #- common/tools
     #- common/user_add
     #- httpd
-    #- nginx
+    - nginx
     #- mysql
-    - php
+    #- php
     #- docker
     #- zabbix_agent
     #- zabbix_agent/zabbix_agent_mysql
