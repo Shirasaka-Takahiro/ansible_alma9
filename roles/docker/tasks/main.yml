@@ -9,8 +9,8 @@
 - name: install docker repository
   command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
-- name: enable docker repository
-  command: yum-config-manager --enable docker-ce-edge
+#- name: enable docker repository
+#  command: yum-config-manager --enable docker-ce-edge
 
 - name: install docker
   yum: 
