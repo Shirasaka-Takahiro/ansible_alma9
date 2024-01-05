@@ -15,16 +15,16 @@ kernel_parameters:
   - { param: 'vm.swappiness', value: '10' }
 
 ##create user
-user_name: test1
+user_name: test6
 user_password: Test1!
-user_group: test1
+user_group: test6
 
 ##change hostname
 host_name: test-web01
 
 ##Apache
 serveradmin: test@example.com
-domain_name: test.onya-lab.site
+domain_name: test.site
 
 ##MySQL
 root_password: Testtest991!
