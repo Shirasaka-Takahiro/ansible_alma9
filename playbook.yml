@@ -15,7 +15,8 @@
     #- common/file_descriptor
     #- common/history_date
     #- common/postfix
-    - common/user_add
+    #- common/user_add
+    #- common/user_add/sudoers
     #- httpd
     #- nginx
     #- mysql

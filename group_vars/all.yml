@@ -15,9 +15,9 @@ kernel_parameters:
   - { param: 'vm.swappiness', value: '10' }
 
 ##create user
-user_name: test6
+user_name: test8
 user_password: Test1!
-user_group: test6
+user_group: test8
 
 ##change hostname
 host_name: test-web01
