@@ -24,7 +24,7 @@ host_name: test-web01
 
 ##Apache
 serveradmin: test@example.com
-domain_name: test.site
+domain_name: test.com
 
 ##MySQL
 root_password: Testtest991!
