@@ -7,6 +7,11 @@
     src: ../templates/www.conf
     dest: /etc/php-fpm.d/www.conf
 
+- name: copy upstream.conf
+  template:
+    src: ../templates/upstream.conf
+    dest: /etc/nginx/conf.d
+
 - name: change owner and group of opcache directory
   file:
     path: /var/lib/php/opcache
@@ -66,9 +71,9 @@
 - name: copy vhost.conf
   template:
     src: ../templates/vhost.conf.j2
-    dest: /etc/httpd/conf.d/00_{{ domain_name }}.conf
+    dest: /etc/nginx/conf.d/00_{{ domain_name }}.conf
   notify:
-    - restart httpd
+    - restart nginx
 
 - name: copy test.php
   template:

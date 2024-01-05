@@ -22,6 +22,7 @@ ansible-user ALL=(ALL) NOPASSWD:ALL
 su ansible-user
 cd ~
 ssh-keygen -t rsa -b 2048
+cd ~/.ssh
 ssh-keygen -p -m PEM -f id_rsa
 cd ~/.ssh
 cat ./id_rsa.pub > ./authorized_keys

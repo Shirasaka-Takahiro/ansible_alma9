@@ -22,8 +22,8 @@
     #- mysql
     #- mysql/mysql_log
     #- php
-    - php/httpd_php-fpm
-    #- php/nginx_php-fpm
+    #- php/httpd_php-fpm
+    - php/nginx_php-fpm
     #- docker
     #- zabbix_agent
     #- zabbix_agent/zabbix_agent_mysql

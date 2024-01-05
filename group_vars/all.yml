@@ -36,6 +36,9 @@ rotate_num_mysql: 60
 ##dokcer-compose URL
 docker_compose_url: https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64
 
+##php remi URL
+php_remi_url: https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+
 ##php version
 php_version: 80
 

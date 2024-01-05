@@ -3,7 +3,7 @@
   yum:
     name:
       - epel-release
-      - https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+      - "{{ php_remi_url }}"
     disable_gpg_check: yes
 
 - name: install php

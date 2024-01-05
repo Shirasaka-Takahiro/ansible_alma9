@@ -7,7 +7,6 @@
   with_items:
     - net-tools
     - nmap
-    - mailx
     - vim
     - bind-utils
     - telnet
@@ -15,5 +14,4 @@
     - dstat
     - unzip
     - zip
-    - etckeeper
     - postfix
