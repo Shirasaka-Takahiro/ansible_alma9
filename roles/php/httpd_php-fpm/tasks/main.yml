@@ -69,3 +69,8 @@
     dest: /etc/httpd/conf.d/00_{{ domain_name }}.conf
   notify:
     - restart httpd
+
+- name: copy test.php
+  template:
+    src: ../templates/test.php
+    dest: /var/www/vhosts/{{ domain_name }}/public_html
