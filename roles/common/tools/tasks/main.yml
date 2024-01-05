@@ -6,8 +6,14 @@
     state: present
   with_items:
     - net-tools
+    - nmap
+    - mailx
     - vim
     - bind-utils
-    - zip
-    - unzip
+    - telnet
     - wget
+    - dstat
+    - unzip
+    - zip
+    - etckeeper
+    - postfix

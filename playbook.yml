@@ -5,19 +5,23 @@
   roles:
     #- access_test
     #- common/yum_update
-    #- common/firewalld
     #- common/hostname
+    #- common/firewalld
     #- common/selinux
     #- common/swap
     #- common/timezone
     #- common/tools
+    #- common/kernel
+    #- common/file_descriptor
+    #- common/history_date
+    - common/postfix
     #- common/user_add
     #- httpd
     #- nginx
     #- mysql
     #- mysql/mysql_log
     #- php
-    - php/httpd_php-fpm
+    #- php/httpd_php-fpm
     #- php/nginx_php-fpm
     #- docker
     #- zabbix_agent
