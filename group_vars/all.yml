@@ -22,7 +22,7 @@ user_group: test8
 ##change hostname
 host_name: test-web01
 
-##Apache
+##Apache and Nginx
 serveradmin: test@example.com
 domain_name: test.com
 
