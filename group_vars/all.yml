@@ -51,6 +51,7 @@ php_modules:
   - "php-json"
   - "php-xml"
   - "php-mbstring"
+  - "php-mysqlnd"
   - "php-pdo"
   - "php-gd"
   - "php-process"
