@@ -11,6 +11,8 @@
 7. Docker(including docker-compose)
 
 # How to run
+<br >
+(Before running middleware playbooks, You should run access_test playbook to check the target server is correct)
 1. Copy private key to the keys/user.key
 2. Modify group_vars/all.yml(ex. user_name,user_password,host_name,domain_name and so on)
 3. Move to the directory where playbook.yml locates
@@ -24,7 +26,7 @@ You need create a user for exectuing Ansible on AlamLinux9 if you use vagrant ma
 1. useradd ansible-user
 2. vi /etc/sudoers.d/ansible-user
 3. ansible-user ALL=(ALL) NOPASSWD:ALL
-4. su ansible-user
+4. su - ansible-user
 5. cd ~
 6. ssh-keygen -t rsa -b 2048
 7. cd ~/.ssh

@@ -21,17 +21,15 @@
 - name: modify worker connections
   command: sed -i -e "s/worker_connections  1024;/worker_connections  4096;/g" /etc/nginx/nginx.conf
 
+- name: modify worker rlimit nofile
+  shell: echo "worker_rlimit_nofile 16384;" >> /etc/nginx/nginx.conf
+
 - name: create a directory for file descriptor
   file:
     path: /etc/systemd/system/nginx.service.d
     state: directory
     mode: "0755"
     recurse: yes
-
-- name: copy limits.conf
-  template:
-    src: ../templates/limits.conf
-    dest: /etc/systemd/system/nginx.service.d/limits.conf
 
 - name: create vhost directory
   file:
@@ -55,6 +53,16 @@
 - name: copy vhost.conf
   template:
     src: ../templates/vhost.conf.j2
-    dest: /etc/nginx/conf.d/00_{{ domain_name }}.conf
+    dest: /etc/nginx/conf.d/vhost.{{ domain_name }}.conf
+
+- name: copy limits.conf
+  template:
+    src: ../templates/limits.conf
+    dest: /etc/systemd/system/nginx.service.d/limits.conf
+
+- name: copy healthcheck.conf
+  template:
+    src: ../templates/00_healthcheck.conf
+    dest: /etc/nginx/conf.d/00_healthcheck.conf
   notify:
     - restart nginx
