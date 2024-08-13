@@ -3,14 +3,14 @@
   become: true
   user: ansible-user
   roles:
-    #- access_test
-    - common/yum_update
-    - common/hostname
-    - common/firewalld
-    - common/selinux
+    - access_test
+    #- common/yum_update
+    #- common/hostname
+    #- common/firewalld
+    #- common/selinux
     #- common/swap
-    - common/timezone
-    - common/tools
+    #- common/timezone
+    #- common/tools
     #- common/kernel
     #- common/file_descriptor
     #- common/history_date
@@ -19,8 +19,8 @@
     #- common/user_add/sudoers
     #- httpd
     #- nginx
-    - mysql
-    - mysql/mysql_log
+    #- mysql
+    #- mysql/mysql_log
     #- php
     #- php/httpd_php-fpm
     #- php/nginx_php-fpm
